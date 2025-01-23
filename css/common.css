@@ -12,6 +12,52 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+
+/*Style task-1*/
+
+#categories {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  width: 392px;
+  font-family: Arial, sans-serif;
+}
+
+.item {
+  border: 2px solid #007BFF; 
+  border-radius: 8px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #f9f9f9; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.item h2 {
+  font-size: 1.5rem;
+  color: #007BFF; 
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.item ul {
+  list-style: disc; 
+  padding-left: 20px;
+}
+
+.item li {
+  font-size: 1rem;
+  color: #333; 
+  margin: 5px 0;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.item li:hover {
+  transform: translateX(10px);
+  color: #0056b3; 
+}
+
+/*Style task-2*/
+
 .gallery {
   display: flex;
   gap: 20px;
@@ -36,4 +82,205 @@ body {
 
 .gallery-image:hover {
   transform: scale(1.05);
+}
+
+/*Style task-3*/
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+  font-weight: bold;
+  margin-top: 10px;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+input[type="text"] {
+  width: 80%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+#name-output {
+  color: indigo;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+/*Style task-4*/
+
+.login-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.login-form label {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: left;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.login-form button {
+  padding: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+/*Style task-5*/
+
+.widget {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.widget p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.widget .color {
+  font-weight: bold;
+  color: #007BFF;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.widget .change-color {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.widget .change-color:hover {
+  background-color: #0056b3;
+}
+
+.widget .change-color:active {
+  transform: scale(0.95);
+}
+
+/*Style task-6*/
+
+#controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#controls input[type="number"] {
+  width: 80px;
+  padding: 5px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+#controls input[type="number"]:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+#controls button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+#controls button:hover {
+  background-color: #0056b3;
+}
+
+#controls button:active {
+  transform: scale(0.95);
+}
+
+#boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#boxes div {
+  width: 30px; 
+  height: 30px;
+  background-color: #007BFF;
+  border: 2px solid #0056b3;
+  border-radius: 5px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+#boxes div:hover {
+  transform: scale(1.1);
+  background-color: #0056b3;
 }
